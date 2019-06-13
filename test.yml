@@ -2,21 +2,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka,http://localhost:8760/eureka
-    healthcheck:
-      enabled: true
-
 spring:
   application:
-    name: eureka-client1
- 
+    name: eureka-client2
 server:
-  port: 8762
-logging:
-  level:
-    com.baizhi.feign.TestFeign: debug
-management:
-  security:
-    enabled: false
-feign:
-  hystrix:
-    enabled: true
+  port: 8763
